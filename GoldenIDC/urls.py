@@ -14,10 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
-from django.contrib import admin
 from golden_web import urls
+from GoldenIDC import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^', include(urls, namespace='golden_web'))
 ]
+
+handler403 = views.permission_denied
+handler404 = views.page_no_found
+handler500 = views.page_erro
+
