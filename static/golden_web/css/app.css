@@ -14,7 +14,7 @@
 .footer01 .col-md-4{width:41.66666667%;}
 }
 @media (max-width: 1600px)  {
-	.product_show .information .tab_list li{padding: 0 15px;}
+	.product_show .information .tab_list li{padding: 0 13px;}
 	#cavasmap{height: 600px;}
 	.indexwrap03 .bd .mapdesc{margin-top: 150px;}
 	.article_list .row{margin: 0 -15px;}
@@ -32,7 +32,7 @@
 	.footer01{padding: 50px 0;}
 	/*.col-lg-7{width: 100%;}*/
 	.col-lg-7 hr{margin: 15px 0;}
-	.footer02 .copyright{text-align: left;padding-left: 30px;}
+	.footer02 .copyright{padding-left: 30px;}
 	#cavasmap{height: 560px;}
 	.indexwrap03 .bd .box .description{height: 114px;}
 	
