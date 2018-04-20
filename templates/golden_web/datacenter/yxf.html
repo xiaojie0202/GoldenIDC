@@ -1,0 +1,61 @@
+{% extends 'golden_web/datacenter/dc_base.html' %}
+{% load static %}
+{% block dataname %}天津宜兴阜数据中心{% endblock dataname %}
+{% block dc_menu %}
+    <a href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a>
+    <a href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a>
+    <a href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a>
+    <a href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a>
+    <a class="cur" href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a>
+    <a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a>
+{% endblock dc_menu %}
+
+{% block dc_img %}
+    <img src="{% static 'golden_web/img/datecenter/yxf-d.jpg' %}"/>
+{% endblock dc_img %}
+
+{% block dc_info %}
+    <div class="information">
+        <h1 class="name">{% block dc_info_name %}天津宜兴阜数据中心{% endblock dc_info_name %}</h1>
+        <ul class="tab_list clearfix">
+            <li class="cur">机房概况</li>
+            <li>地理位置</li>
+            <li>电力系统</li>
+            <li>空调系统</li>
+            <li>消防设施</li>
+            <li>网络资源</li>
+            <li>机柜规格</li>
+        </ul>
+        <ul class="tab_content clearfix">
+            <li>
+                •	产权单位：中国联通 <br>
+                •	设计机架数：1000个 <br>
+                •	开通时间：2014年
+                •	机房面积：1000平方米
+                •	抗震等级：8
+                该机房目前通过20Gbps高速光纤通道连接绍兴道数据中心，建筑面积达1000余平方米。
+
+            </li>
+            <li>
+                <p>宜兴埠机房坐落于天津市北辰区新宜白大道天津联通宜兴埠局院内，距京津塘高速公路宜兴阜出口1.2公里，交通便利。</p>
+            </li>
+            <li>
+                <p>宜兴埠机房设有高低压变配电间，引入2路市电，现有卡特比勒400KW柴油发电机组一台，作为后备支撑电源,新增6台400KVA UPS主机设备，并联组成两套(2+1)冗余并联系统，2套800KVA UPS供电系统分别为3层，4层IDC机房供电。</p>
+            </li>
+            <li>
+                <p>每层IDC机房内布置十台6万大卡/时机房专用精密空调。采用下送风方式空调系统，即在机柜近侧布置活动地板送风口将冷风送到机柜的送风方式。</p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p>~宜兴埠机房3层和4层共用Cisco7609交换机为核心设备。由两台核心设备互为备份，确保网络的安全性和稳定性。机房出口带宽为20G。</p>
+                <p>~多线BGP（联通、电信、移动、教育、铁通）、单线（电信）、单线（联通）</p>
+            </li>
+            <li></li>
+        </ul>
+
+        {#                        <a href="" download class="download btn noradius colorDodge">下载机房信息</a>#}
+
+    </div>
+{% endblock dc_info %}

@@ -1,0 +1,65 @@
+{% extends 'golden_web/datacenter/dc_base.html' %}
+{% load static %}
+{% block dataname %}天津空港移动数据中心{% endblock dataname %}
+{% block dc_menu %}
+    <a href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a>
+    <a href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a>
+    <a  class="cur" href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a>
+    <a href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a>
+    <a href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a>
+    <a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a>
+{% endblock dc_menu %}
+
+{% block dc_img %}
+    <img src="{% static 'golden_web/img/datecenter/kgyd-d.jpg' %}"/>
+{% endblock dc_img %}
+
+{% block dc_info %}
+    <div class="information">
+        <h1 class="name">{% block dc_info_name %}天津空港移动数据中心{% endblock dc_info_name %}</h1>
+        <ul class="tab_list clearfix">
+            <li class="cur">机房概况</li>
+            <li>地理位置</li>
+            <li>电力系统</li>
+            <li>空调系统</li>
+            <li>消防设施</li>
+            <li>网络资源</li>
+            <li>机柜规格</li>
+        </ul>
+        <ul class="tab_content clearfix">
+            <li>
+                <p>
+                    天津移动空港数据中心,总建筑面积约8000平米，其中单层可装机面积1450平米，层高4层。
+                    机房有近 5 米的层高；整体机房采用承重结构设计，可供您放置一些特型设备；机房的承重能力已经达到了 8 级的抗震强度，每平方米可受重的能力为 600 公斤。
+                </p>
+            </li>
+            <li>
+                <p>
+                    天津移动空港数据中心位于空港经济区环河西路，据天津滨海国际机场2.5公里，紧邻天津城区，交通便利体现在航空、港口、高速公路三位一体的交通网络。
+                </p>
+            </li>
+            <li>
+                <p>
+                    机房电力采用220千伏+110千伏双路双节点市电输入，6台400KVA艾默生UPS可支撑30分钟，两路柴油发电机，48小时柴油储备。
+                </p>
+            </li>
+            <li>
+                <p>
+                    采用智能节能双循环机房专用空调系统，绿色高效制冷系统，有效保证室内温度稳定在21°±3°，湿度保持在40%-70%。
+                </p>
+            </li>
+            <li>
+                <p>机房采用的是防火构架及材料，消防能力符合国际通信标准。机房和楼道内装有温度烟雾感应消防系统，防火报火警探头，遇到火情时自动启动灭火器灭火。</p>
+            </li>
+            <li>
+                做为天津移动的核心机房，空港数据中心采用4台最高端华为NE40全业务路由器为核心设备，互为备份，确保网络的安全性和稳定性；机房直接与中国移动骨干网络相连，一期出口带宽20G，双路互备。
+            </li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+
+        {#                        <a href="" download class="download btn noradius colorDodge">下载机房信息</a>#}
+
+    </div>
+{% endblock dc_info %}

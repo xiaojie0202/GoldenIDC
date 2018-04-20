@@ -1,0 +1,117 @@
+{% extends 'base_site.html' %}
+{% load static %}
+
+{% block body2 %}
+    <div class="relative clearfix">
+        <div class="banner">
+            <img src="{% static 'golden_web/img/corporation.jpg' %}"/>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12" style="font-size:0;">
+                        <a class="cur" href="/profile/">公司简介</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="num">
+                        <h2>
+                            金石创世
+                        </h2>
+                        <ul>
+                            <li>
+                                <strong>20+</strong>
+                                <p>
+                                    资源节点
+                                </p>
+                            </li>
+                            <li>
+                                <strong style="line-height: 66px; font-family:;" 微软雅黑";font-size:30px;font-weight:normal;"="">6座</strong>
+                                <p>
+                                    核心机房
+                                </p>
+                            </li>
+                            <li>
+                                <strong>2000G+</strong>
+                                <p>
+                                    网络宽带
+                                </p>
+                            </li>
+                            <li>
+                                <strong>6000R+</strong>
+                                <p>
+                                    机柜储配
+                                </p>
+                            </li>
+                            <li>
+                                <strong>2B+</strong>
+                                <p>
+                                    IP储备
+                                </p>
+                            </li>
+                            <li>
+                                <strong>160+</strong>
+                                <p>
+                                    服务客户
+                                </p>
+                            </li>
+                        </ul>
+                        <p style="text-align:center;font-size:16px;">
+                            金石创世成立于2014年6月，是全球具有重要影响力的网络空间基础设施服务提供商，
+                            也是中国领先的第三方独立数据中心运营商。作为中国卓越的互联互通网络平台。
+                            金石创世致力于提供业界领先的数据中心服务、中立的云服务、中立的混合IT服务和领先的CDN服务，打造具有核心技术、超大规模运营能力的网络空间基础设施运营平台。
+                            高能数据中心，依托在数据中心建设、网络连接等方面的经验势，将数据中心从高品质时代引入高能时代。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept" style="background: #f5f5f5;padding: 70px 0 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 style="margin-bottom: 30px;">金石创世</h2>
+
+                        <p align="center">
+                            <span style="font-size:18px;">开心&nbsp;&nbsp;&nbsp; 尊重&nbsp;&nbsp;&nbsp; 拼搏&nbsp;&nbsp;&nbsp; 负责&nbsp;&nbsp;&nbsp; 感恩</span>
+                        </p>
+                        <br>
+                        <br>
+
+                        <div class="col-xs-5">
+                            <p><img src="{% static 'golden_web/img/goldenlogo.png' %}" alt=""></p>
+                            <br>
+                            <br>
+                            <br>
+                            <p style="font: bold 16px/16px 'Mcr">地址：北京海淀区清华东路甲1号凯时广场5楼B612</p>
+                            <br>
+                            <br>
+                            <p>邮编：100083</p>
+                            <p>电话：18601057002</p>
+                            <p>QQ：505569470</p>
+                            <br>
+                            <br>
+                            <p>市场合作:18601057002</p>
+                            <br>
+                            <p>合作邮箱：qiuguokui@goldenidc.com</p>
+                            <br>
+                            <br>
+                            <p><span style="font-size: 40px; color: red">7*24*365为您服务</span></p>
+                        </div>
+                        <div class="col-xs-7">
+                            <iframe src="{% url 'golden_web:baidumap' %}" frameborder="0" scrolling="no" style="width: 100%; height: 496px"></iframe>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body2 %}

@@ -1,0 +1,21 @@
+{% extends 'golden_web/fuwutixi/server_base.html' %}
+{% load static %}
+
+{% block server_menu %}
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12" style="font-size:0;">
+                    <a href="{% url 'golden_web:service_system' "consult" %}">咨询服务</a>
+                    <a href="{% url 'golden_web:service_system' "kefu" %}">客服服务</a>
+                    <a href="{% url 'golden_web:service_system' "maintain" %}">运维服务</a>
+                    <a class="cur" href="{% url 'golden_web:service_system' "customize" %}">定制服务</a></div>
+            </div>
+        </div>
+    </div>
+{% endblock server_menu %}
+
+{% block service_context %}
+    <h1 class="center catname">定制服务</h1>
+    <h2 class="center catdescription">专业的售前咨询服务</h2>
+{% endblock service_context %}

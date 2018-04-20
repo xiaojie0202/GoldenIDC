@@ -1,0 +1,65 @@
+{% extends 'golden_web/datacenter/dc_base.html' %}
+{% load static %}
+{% block dataname %}天津电信天波数据中心{% endblock dataname %}
+{% block dc_menu %}
+    <a href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a>
+    <a href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a>
+    <a href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a>
+    <a class="cur" href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a>
+    <a href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a>
+    <a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a>
+{% endblock dc_menu %}
+
+{% block dc_img %}
+    <img src="{% static 'golden_web/img/datecenter/dxtb-d.jpg' %}"/>
+{% endblock dc_img %}
+
+{% block dc_info %}
+    <div class="information">
+        <h1 class="name">{% block dc_info_name %}天津电信天波数据中心{% endblock dc_info_name %}</h1>
+        <ul class="tab_list clearfix">
+            <li class="cur">机房概况</li>
+            <li>地理位置</li>
+            <li>电力系统</li>
+            <li>空调系统</li>
+            <li>消防设施</li>
+            <li>网络资源</li>
+            <li>机柜规格</li>
+        </ul>
+        <ul class="tab_content clearfix">
+            <li>
+                <p>
+                    天津电信IDC 数据机房位于天津电信中心天波局中，提供的基础设施包电信级的机房场地、机房环境保障；高速稳定的网络保障；充足持续的电力保障；严密的安全保障；可靠的消防保障；高水平的技术支持
+                </p>
+            </li>
+            <li>
+                <p>天津市河东区六经路11号</p>
+            </li>
+            <li>
+                <p>
+                    数据中心设有专用的变电站，双路市电从发电厂输送到变电站；
+                    为保障分配给用户的电力不间断的供应，
+                    数据中心电力机房安装了智能UPS 系统及容量充足的电池，可以保证持续供电；
+                    此外，数据中心还配备柴油发电机组，当电力中断时使用，可为用户提供99.99%的电力供应保障。
+                </p>
+                <p>
+                    ☆ 市电保障：30000KVA 三路市电；每机架1.6KVA 电力供应。<br>
+                    ☆ UPS 保障：两组独立超大功率电信机房专用UPS 双路（N+1）供电，电池持续供电时间不短于4 小时。<br>
+                    ☆ 后备柴油发电机组：2 组4 台1300KVA 柴油发电机组阵列备份，总容量5200KVA，在双路市电同时意外断开30 秒之内自动切换。
+                </p>
+            </li>
+            <li></li>
+            <li>
+                <p>IDC 机房采用激光主动式早期火灾预警及灭火系统，
+                    数据中心机房采用防火构架及材料，消防能力符合电信级标准，
+                    备有多个紧急通道；机房及楼道内安装温度烟雾感应消防系统，
+                    防火报警探测头，遇火情时系统自动报警，并启动惰性气体灭火系统灭火。此外，机房内还可另外配备手提式、推车式灭火器。</p>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        {#                        <a href="" download class="download btn noradius colorDodge">下载机房信息</a>#}
+
+    </div>
+{% endblock dc_info %}

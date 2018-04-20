@@ -1,0 +1,83 @@
+{% extends 'golden_web/datacenter/dc_base.html' %}
+{% load static %}
+{% block dataname %}天津空港联通数据中心{% endblock dataname %}
+{% block dc_menu %}
+    <a class="cur" href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a>
+    <a href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a>
+    <a href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a>
+    <a href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a>
+    <a href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a>
+    <a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a>
+{% endblock dc_menu %}
+
+{% block dc_img %}
+    <img src="{% static 'golden_web/img/tjkg.jpg' %}"/>
+{% endblock dc_img %}
+
+{% block dc_info %}
+    <div class="information">
+        <h1 class="name">{% block dc_info_name %}天津空港联通IDC机房{% endblock dc_info_name %}</h1>
+        <ul class="tab_list clearfix">
+            <li class="cur">机房概况</li>
+            <li>地理位置</li>
+            <li>电力系统</li>
+            <li>空调系统</li>
+            <li>消防设施</li>
+            <li>网络资源</li>
+            <li>机柜规格</li>
+        </ul>
+        <ul class="tab_content clearfix">
+            <li>
+                <p>
+                    总建筑面积70500平方米，其中IDC/EDC通信设备机房相关面积40000m2，
+                    设计配备4000个标准机架，可容纳约70000台服务器，是目前容量最大、最具IDC领先技术特性的数据中心。
+                    机房总出口带宽可达400G，独立于天津城域网、直连中国联通国家骨干网核心设备。
+                </p>
+            </li>
+            <li>
+                <p>天津滨海新区空港国家数据中心位于天津滨海新区内保税区空港物流加工区</p>
+            </li>
+            <li>
+                <p>空港IDC机房部署了240V高压直流供电机房，成熟、兼容性最好的240V高压直流技术不仅可以为相应直流设备供电，
+                    而且可以直接兼容大部分使用220V交流电压的服务器设备，
+                    另外此机房内还部署了部分交流机柜，可安装交流供电交换机等非兼容型设备。</p>
+                <br>
+                <p>
+                    首层高密机房、VIP机房设计为采用2N方式供电，
+                    由4台“2+2”UPS电源设备以并联在线方式运行，
+                    通过并机板和通讯线实现冗余并机。二层达到原生N+1方式供电，
+                    配置三总线系统，使机房电力保障能力提高，UPS供电时间也达到国际标准。
+                </p>
+            </li>
+            <li>
+                <p>采用业界领先的水冷集中式空调系统，机房PUE值控制在1.6以下，达到国际高标准机房要求</p>
+            </li>
+            <li>
+                <p>
+                    空港IDC机房将部署统一集中式管理系统，实现对动力、环境、消防、视频监控、网络流量的统一采集、管理、监控和报表，并且为客户提供灵活的分权管理能力。
+                </p>
+            </li>
+            <li>
+                <p>
+                    将网络核心设备独立部署于独立的直流48V网络核心机房，
+                    与客户设备相隔离，避免人为误操作和其它设备用电异常干扰的情况发生。
+                    为满足客户网络安全需要，在核心设备预留更多冗余的高速端口，
+                    具有强大的业务支持能力以及满足客户热备端口需求。
+                </p>
+            </li>
+            <li>
+                <p>尺寸：2200（高）*1200（深）*600（宽）(46U)</p>
+                <p>隔板标配：4个</p>
+                <br>
+                <p>PDU配电电源：</p><p>双路电源插座，单路标准的C13插座22个（10A），C19插座2个（16A），电压220V，交流</p>
+                <p>L支架：L支架标配18对，可以配合机柜使用，安装机架式服务器  </p>
+                <p>盲板：盲板用于遮挡标准机柜内的空余位置等用途，盲板为1U、2U两种</p>
+                <p>前后门：前后门均为六角圆孔，提高了机柜整体散热性能。</p>
+                <p>其他：机柜内温度计</p>
+            </li>
+        </ul>
+
+        {#                        <a href="" download class="download btn noradius colorDodge">下载机房信息</a>#}
+
+    </div>
+{% endblock dc_info %}

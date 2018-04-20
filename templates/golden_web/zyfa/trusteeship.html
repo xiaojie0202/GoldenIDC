@@ -1,0 +1,20 @@
+{% extends 'golden_web/zyfa/zyfa_base.html' %}
+{% load static %}
+
+{% block zyfa_header %}
+    <h2>服务器托管</h2>
+    <h3>稳定安全，国家级T3以上数据中心，保障设备的稳定运行</h3>
+{% endblock zyfa_header %}
+
+{% block zyfa_menu %}
+    <a class="cur" href="{% url 'golden_web:resource' "trusteeship" %}">服务器托管</a>
+    <a href="{% url 'golden_web:resource' "cabinet" %}">机柜资源</a>
+    <a href="{% url 'golden_web:resource' "broadband" %}">大带宽资源</a>
+    <a href="{% url 'golden_web:resource' "customization" %}">行业定制化</a>
+{% endblock zyfa_menu %}
+
+{% block zyfa_context %}
+    <h1 style="font-size: 30px;text-align: center">建设中</h1>
+    <h1 style="font-size: 30px;text-align: center">建设中</h1>
+    <h1 style="font-size: 30px;text-align: center">建设中</h1>
+{% endblock zyfa_context %}

@@ -1,0 +1,82 @@
+{% extends 'golden_web/datacenter/dc_base.html' %}
+{% load static %}
+{% block dataname %}天津华苑国际数据港{% endblock dataname %}
+{% block dc_menu %}
+    <a href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a>
+    <a class="cur" href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a>
+    <a href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a>
+    <a href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a>
+    <a href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a>
+    <a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a>
+{% endblock dc_menu %}
+
+{% block dc_img %}
+    <img src="{% static 'golden_web/img/datecenter/hygjsjg-d.jpg' %}"/>
+{% endblock dc_img %}
+
+{% block dc_info %}
+    <div class="information">
+        <h1 class="name">{% block dc_info_name %}天津华苑国际数据港{% endblock dc_info_name %}</h1>
+        <ul class="tab_list clearfix">
+            <li class="cur">机房概况</li>
+            <li>地理位置</li>
+            <li>电力系统</li>
+            <li>空调系统</li>
+            <li>消防设施</li>
+            <li>网络资源</li>
+            <li>机柜规格</li>
+        </ul>
+        <ul class="tab_content clearfix">
+            <li>
+                <p>
+                    天津联通华苑国际数据港为国内5A标准机房，机房带宽出口独立于天津城域网，为最高级别的国家网络数据中心。
+                </p>
+                <br>
+                <p>类 型：国内5A标准机房</p>
+                <br>
+                <p>隶 属：国家网络数据中心</p>
+            </li>
+            <li>
+                <p>华苑机房坐落于天津市南开区新技术产业园区华苑产业区梓苑路6号</p>
+            </li>
+            <li>
+                <p>
+                    根据华苑IDC机房的整体规划和总体需求，采用高压入户方式，
+                    在机房附地新建开闭站、高、低压配电机房，配备2500KVA变压器四台并联使用，
+                    前置环网物理双路由市电高压侧切换，并预留四台2500KVA变压器位置，
+                    充分保证电力需要。华苑IDC机房配备1200KVA UPS系统2套，
+                    其中单套系统包括400KVA UPM主机4台、配套蓄电池4组、以及进出线柜、旁路柜各一台，
+                    采用3+1并联输出配置。为保证华苑IDC机房楼共4层设备装机的电力保证需求，
+                    新建成的UPS机房面积超过1000平方米，为多套400KVA(3+1)UPS并机系统设备预留了足够的扩展空间
+                </p>
+            </li>
+            <li>
+                <p>
+                    华苑IDC机房制冷由大型冷水机组提供冷源，
+                    通过管道将冷冻水送到在机房内安装的空调终端，
+                    该终端仅起热交换作用，没有压缩机；
+                    然后再将热回水通过室外设置的冷却水塔进行冷却的方式给机房提供制冷。
+                    机房内送风方式采用地板下送风，在每列机架前端开送风口；
+                    机架排列采用冷热区的方式，以利于空气循环。
+                </p>
+            </li>
+            <li>
+                <p>
+                    机房采用防火构架及材料，消防能力符合电信级标准,备有多个紧急通道；采用高灵敏度的激光主动式早期烟雾探测报警系统，保证在第一时间发现火灾隐患，并利用气体灭火系统实施灭火。
+                </p>
+            </li>
+            <li>
+                华苑数据港，总出口带宽为160G，其中直联China169天津骨干网节点设备4条10GE，
+                以及IP城域网互联2条10GE，保证充裕的网络带宽和优质的网络环境。
+                华苑数据港，使用4台Cisco7609路由器为核心设备，互为备份，确保网络的安全性和稳定性。
+            </li>
+            <li>
+                机柜规格
+            </li>
+
+        </ul>
+
+        {#                        <a href="" download class="download btn noradius colorDodge">下载机房信息</a>#}
+
+    </div>
+{% endblock dc_info %}

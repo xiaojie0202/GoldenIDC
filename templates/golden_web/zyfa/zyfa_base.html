@@ -1,0 +1,47 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block body2 %}
+    <div class="relative clearfix">
+        <div class="banner">
+            <img src="{% static 'golden_web/img/zyfb-bg.jpg' %}"/>
+            <div class="info">
+                <div class="box">
+                    {% block zyfa_header %}
+                    {% endblock zyfa_header %}
+                    <p>
+                        <a href="tencent://message/?uin=505569470&Site=www.goldenidc.com&Menu=yes" class="tdn">立即咨询</a>
+                        <a class="tdn">申请测试</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12" style="font-size:0;">
+                        {% block zyfa_menu %}
+                        {% endblock zyfa_menu %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_case">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    {% block zyfa_context %}
+                    {% endblock zyfa_context %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body2 %}

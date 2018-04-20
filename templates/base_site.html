@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock title %}
+{% block style %}{% endblock style %}
+{% block script %}{% endblock script %}
+
+{% block body %}
+    <header>
+        <div class="header01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="left">
+                            <a href="/" class="logo">
+                                <img src="{% static 'golden_web/img/goldenlogo.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <ul class="nav1">
+                                <li>
+                                    <a href="/">首页</a>
+                                </li>
+                                <li class="product">
+                                    <a href="{% url 'golden_web:data_center' %}">数据中心</a>
+                                </li>
+                                <li>
+                                    <a href="#">服务体系</a>
+                                    <ul class="nav2 no-animates">
+                                        <li><a href="{% url 'golden_web:service_system' "consult" %}">咨询服务</a></li>
+                                        <li><a href="{% url 'golden_web:service_system' "kefu" %}">客服服务</a></li>
+                                        <li><a href="{% url 'golden_web:service_system' "maintain" %}">运维服务</a></li>
+                                        <li><a href="{% url 'golden_web:service_system' "customize" %}">定制服务</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">资源方案</a>
+                                    <ul class="nav2 no-animates">
+                                        <li><a href="{% url 'golden_web:resource' "trusteeship" %}">服务器托管</a></li>
+                                        <li><a href="{% url 'golden_web:resource' "cabinet" %}">机柜资源</a></li>
+                                        <li><a href="{% url 'golden_web:resource' "broadband" %}">大带宽资源</a></li>
+                                        <li><a href="{% url 'golden_web:resource' "customization" %}">行业定制化</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="{% url 'golden_web:corporation' %}">关于我们</a>
+                                </li>
+                                <li>
+                                    <a href="tencent://message/?uin=505569470&Site=www.goldenidc.com&Menu=yes">联系我们</a>
+                                </li>
+                                <li class="lang">
+                                    <a href="/">中文</a>
+                                    <a href="">EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header02">
+            <div class="header_moblie">
+                <div class="header_moblie">
+                    <!--移动端头部-->
+                    <div class="mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="/" class="text-center logo">
+                                        <img src="{% static 'golden_web/img/goldenlogo.png' %}"/>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="right">
+                                        <div href="###" class="navbar-btn">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav">
+                        <div class="close"></div>
+                        <ul class="dropdown no-animates">
+                            <li class="active"><a href="/">首页</a></li>
+                            <li>
+                                <a href="javascript:;">数据中心</a>
+                                <ul class="nav2">
+                                    <li><a href="{% url 'golden_web:show_data' "kglt" %}">天津空港联通数据中心</a></li>
+                                    <li><a href="{% url 'golden_web:show_data' "hygjsjg" %}">天津华苑国际数据港</a></li>
+                                    <li><a href="{% url 'golden_web:show_data' "kgyd" %}">天津空港移动数据中心</a></li>
+                                    <li><a href="{% url 'golden_web:show_data' "dxtb" %}">天津电信天波数据中心</a></li>
+                                    <li><a href="{% url 'golden_web:show_data' "yxf" %}">天津宜兴阜数据中心</a></li>
+                                    <li><a href="{% url 'golden_web:show_data' "sxd" %}">天津绍兴道数据中心</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">服务体系</a>
+                                <ul class="nav2">
+                                    <li><a href="{% url 'golden_web:service_system' "consult" %}">咨询服务</a></li>
+                                    <li><a href="{% url 'golden_web:service_system' "kefu" %}">客服服务</a></li>
+                                    <li><a href="{% url 'golden_web:service_system' "maintain" %}">运维服务</a></li>
+                                    <li><a href="{% url 'golden_web:service_system' "customize" %}">定制服务</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">资源方案</a>
+                                <ul class="nav2">
+                                    <li><a href="{% url 'golden_web:resource' "trusteeship" %}">服务器托管</a></li>
+                                    <li><a href="{% url 'golden_web:resource' "cabinet" %}">机柜资源</a></li>
+                                    <li><a href="{% url 'golden_web:resource' "broadband" %}">大带宽资源</a></li>
+                                    <li><a href="{% url 'golden_web:resource' "customization" %}">行业定制化</a></li>
+                                </ul>
+                            </li>
+                            <li>
+
+
+                                <a href="{% url 'golden_web:corporation' %">关于我们</a>
+                            </li>
+                            <li>
+                                <a href="tencent://message/?uin=505569470&Site=www.goldenidc.com&Menu=yes">联系我们</a>
+                            </li>
+                        </ul>
+                        <p class="lang right">
+                            <a href="/" class="inline-block">中文</a>|
+                            <a href="" class="inline-block">EN</a>
+                        </p>
+                    </div>
+                    <div class="cd-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <!--产品列表-->
+        <div class="header03 no-animates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "kglt" %}" style="cursor: default;" class="tdn">天津联通空港数据中心</a>
+                            </dt>
+                            <dd><a class="tdn">4000个标准机架</a></dd>
+                            <dd><a class="tdn">出口带宽可达400G</a></dd>
+                            <dd><a class="tdn">总建筑面积70500平方米</a></dd>
+                            <dd><a class="tdn">直连国家骨干网核心设备</a></dd>
+                            <dd><a class="tdn">7*24小时驻场运维</a></dd>
+                        </dl>
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "hygjsjg" %}" style="cursor: default;"
+                                   class="tdn">天津华苑国际数据港</a></dt>
+                            <dd><a class="tdn">五星级高端IDC机房</a></dd>
+                            <dd><a class="tdn">20910平方米独立大楼</a></dd>
+                            <dd><a class="tdn">2000kva大型柴油发电机</a></dd>
+                            <dd><a class="tdn">自动消防系统</a></dd>
+                            <dd><a class="tdn">八级抗震</a></dd>
+                            <dd><a class="tdn">7*24小时驻场运维</a></dd>
+
+
+                        </dl>
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "kgyd" %}" style="cursor: default;" class="tdn">天津空港移动数据中心</a>
+                            </dt>
+                            <dd><a class="tdn">总建筑面积约8000平米</a></dd>
+                            <dd><a class="tdn">移动互联网应用总部</a></dd>
+                            <dd><a class="tdn">华为模块化建设</a></dd>
+                            <dd><a class="tdn">恒温恒湿空调系统</a></dd>
+                            <dd><span class="tdn">7*24小时驻场运维</span></dd>
+
+                        </dl>
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "dxtb" %}" style="cursor: default;" class="tdn">天津电信天波数据中心</a>
+                            </dt>
+                            <dd><a class="tdn">电信级的机房场地</a></dd>
+                            <dd><a class="tdn">高速稳定的网络保障</a></dd>
+                            <dd><a class="tdn">充足持续的电力保障</a></dd>
+                            <dd><a class="tdn">严密的安全保障</a></dd>
+                            <dd><a class="tdn">可靠的消防保障</a></dd>
+                            <dd><span class="tdn">7*24小时驻场运维</span></dd>
+
+                        </dl>
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "yxf" %}" style="cursor: default;" class="tdn">天津宜兴埠数据中心</a>
+                            </dt>
+                            <dd><a class="tdn">四星级IDC机房</a></dd>
+                            <dd><a class="tdn">多线BGP</a></dd>
+                            <dd><a class="tdn">联通、电信、移动、教育</a></dd>
+                            <dd><a class="tdn">2套800KVA UPS供电</a></dd>
+                            <dd><span class="tdn">7*24小时驻场运维</span></dd>
+
+
+                        </dl>
+                        <dl class="product_box">
+                            <dt><a href="{% url 'golden_web:show_data' "sxd" %}" style="cursor: default;" class="tdn">天津绍兴道数据中心</a>
+                            </dt>
+                            <dd><a class="tdn">北京骨干网出口</a></dd>
+                            <dd><a class="tdn">10 级的抗震强度</a></dd>
+                            <dd><a class="tdn">UPS 双路电源系统</a></dd>
+                            <dd><a class="tdn">梅蓝日蓝大型立式空调</a></dd>
+                            <dd><a class="tdn">采用防火构架材料</a></dd>
+                            <dd><a class="tdn">UPS不间断电源</a></dd>
+                            <dd><a class="tdn">7*24小时驻场运维</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block body2 %}{% endblock body2 %}
+    {% block foo %}
+        <script>
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                new WOW().init();
+            }
+            ;
+        </script>
+        <a href="http://mqu.cn/" style="position:fixed;display: none;">mqu.cn</a>
+        <a href="http://site.nuo.cn/" style="position:fixed;display: none;">site.nuo.cn</a>
+        <footer>
+            <div class="footer01">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3"><img
+                                src="{% static 'golden_web/img/foot_icon1.png' %}"><span>秒级快速响应</span></div>
+                        <div class="col-xs-3"><img src="{% static 'golden_web/img/foot_icon2.png' %}"><span>7×24×365 全天候服务</span>
+                        </div>
+                        <div class="col-xs-3"><img
+                                src="{% static 'golden_web/img/foot_icon3.png' %}"><span>VVIP 大客户服务</span></div>
+                        <div class="col-xs-3"><img
+                                src="{% static 'golden_web/img/foot_icon4.png' %}"><span>高标准云计算数据中心</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer02">
+                <p class="copyright center">IDC、ISP经营许可证编号： B1-20150714 粤ICP备14076948号 ©Copyright 金石创世网络科技有限公司</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602000026"
+                               target="_blank" class="beian right"><em class="sprite"></em> 公安备案号：粤公网安备 44010602000026号</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $('#owl-banner').owlCarousel({
+                items: 1,
+                autoplay: true,
+                loop: true,
+                dots: true
+            });
+        </script>
+    {% endblock foo %}
+{% endblock body %}

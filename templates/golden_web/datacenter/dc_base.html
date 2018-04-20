@@ -1,0 +1,71 @@
+{% extends 'base_site.html' %}
+{% load static %}
+
+{% block body2 %}
+    <style type="text/css">
+
+        .breadcrumb {
+            margin-top: 0;
+            background: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breadcrumb a {
+            border-bottom: 2px solid transparent;
+            color: #333;
+        }
+
+        .breadcrumb a.cur, .breadcrumb a:hover {
+            background: none;
+            font-weight: bold;
+            border-bottom: 2px solid #1AA93A;
+        }
+    </style>
+    <div class="relative clearfix">
+        <div class="banner">
+            <img src="{% static 'golden_web/img/datacenter-bg.jpg' %}"/>
+            <div class="txt inline-block"><span>{% block dataname %}数据中心名称{% endblock dataname %}</span></div>
+        </div>
+        <div class="breadcrumb no-animates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 no-animates">
+                        {% block dc_menu %}
+                        {% endblock dc_menu %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_show">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 pull-right">
+                    <div class="img-responsive">
+                        {% block dc_img %}
+                        {% endblock dc_img %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 pull-left">
+                    {% block dc_info %}
+                    {% endblock dc_info %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(".tab_list li").click(function () {
+
+            $(this).addClass('cur').siblings().removeClass('cur');
+
+            $(".tab_content li").eq($(this).index()).show().siblings().hide();
+
+        });
+
+    </script>
+{% endblock body2 %}

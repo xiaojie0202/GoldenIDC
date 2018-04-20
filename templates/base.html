@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="description"
+          content="专业的企业级IDC、ISP基础设施、网络通信及数据应用服务提供商 提供高可用、高质量、高防御、低能耗数据中心及运维服务 已通过ISO27001、ISO20000认证 运营超过20个省市数据中心">
+    <meta name="keywords" content="IDC服务提供商，ISP基础设施，网络通信，数据中心，运维服务，服务器托管，混合云，">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title>{% block title %}天津IDC数据中心,虚拟主机,服务器托管机柜,带宽,双线机房， BGP机房－金石创世{% endblock title %}</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'golden_web/css/owl.carousel.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/reset.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'golden_web/css/animate.min.css' %}" rel="stylesheet" type="text/css"/>
+    <script src="{% static 'golden_web/js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>
+    <link href="{% static 'golden_web/css/index.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'golden_web/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'golden_web/css/app.css' %}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{% static 'js/jquery-min.js' %}"></script>
+    <script src="{% static 'golden_web/js/owl.carousel.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'golden_web/js/rightnav.js' %}" type="text/javascript" charset="utf-8"></script>
+    {% block style %}{% endblock style %}
+    {% block script %}{% endblock script %}
+
+</head>
+<body>
+    {% block body %}{% endblock body %}
+</body>
+</html>
