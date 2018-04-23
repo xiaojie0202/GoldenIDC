@@ -3,18 +3,44 @@
 
 {% block zyfa_header %}
     <h2>大带宽资源</h2>
-    <h3>优质的大带宽资源，适用于云计算、大数据、视频、直播等各类型互联网企业，高速独享宽带为您的业务提速。</h3>
+    {#    <h3>优质的大带宽资源，适用于云计算、大数据、视频、直播等各类型互联网企业，高速独享宽带为您的业务提速。</h3>#}
+    <h3>电信、联通、移动、双线多个机房供你选择、
+        根据不同用户对带宽的需求，我司可提供100M独享～50000M独享带宽。各种下载站点、电影、音乐、视频在线播放、视频聊天、网络电话、P2P传输、大型数据库及其它占用带宽较多的应用，彻底解决带宽不够用造成的卡、慢、顿挫等现象！保证带宽实际可用率99%以上。</h3>
 {% endblock zyfa_header %}
 
 {% block zyfa_menu %}
     <a href="{% url 'golden_web:resource' "trusteeship" %}">服务器托管</a>
     <a href="{% url 'golden_web:resource' "cabinet" %}">机柜资源</a>
-    <a class="cur"  href="{% url 'golden_web:resource' "broadband" %}">大带宽资源</a>
+    <a class="cur" href="{% url 'golden_web:resource' "broadband" %}">大带宽资源</a>
     <a href="{% url 'golden_web:resource' "customization" %}">行业定制化</a>
 {% endblock zyfa_menu %}
 
 {% block zyfa_context %}
-    <h1 style="font-size: 30px;text-align: center">建设中</h1>
-    <h1 style="font-size: 30px;text-align: center">建设中</h1>
-    <h1 style="font-size: 30px;text-align: center">建设中</h1>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="resource-header animated pulse">
+            <span>金石创世大带宽租用优势</span>
+            <small>多运营商一线资源、高可用率保证</small>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="resource-box animated pulse">
+            <img src="{% static 'golden_web/img/bb_1.jpg' %}" alt="" class="img-responsive">
+            <h4 class="resource-title">丰富的运营经验</h4>
+            <h5 class="resource-text">经过多年的经营，积累了丰富的行业经验，能够根据行业特点、客户规模指定完善的服务方案。</h5>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="resource-box animated pulse">
+            <img src="{% static 'golden_web/img/bb_2.jpg' %}" alt="" class="img-responsive">
+            <h4 class="resource-title">海量的网络资源</h4>
+            <h5 class="resource-text">拥有自建数据中心，并拥有独立的自治域AS号，IP地址资源丰富，可实现多种电信运营商带宽引入。</h5>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="resource-box animated pulse">
+            <img src="{% static 'golden_web/img/bb_3.jpg' %}" alt="" class="img-responsive">
+            <h4 class="resource-title">完善的服务体系</h4>
+            <h5 class="resource-text">公司可实现业务咨询、业务受理、7*24小时及时响应，真正的全天驻场工程师，实时详细的网络监控。</h5>
+        </div>
+    </div>
 {% endblock zyfa_context %}

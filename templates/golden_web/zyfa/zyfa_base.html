@@ -1,11 +1,14 @@
 {% extends 'base_site.html' %}
 {% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'golden_web/css/resource.css' %}">
+{% endblock style %}
 {% block body2 %}
     <div class="relative clearfix">
         <div class="banner">
             <img src="{% static 'golden_web/img/zyfb-bg.jpg' %}"/>
             <div class="info">
-                <div class="box">
+                <div class="box animated bounceInDown">
                     {% block zyfa_header %}
                     {% endblock zyfa_header %}
                     <p>
@@ -27,19 +30,17 @@
             </div>
         </div>
     </div>
-    <div class="page_case">
+    <div class="page_case" style="margin: 30px auto">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+
+                {% block zyfa_context %}
+                {% endblock zyfa_context %}
+                <div class="col xs-12" style="text-align: center">
+                    <a href="tencent://message/?uin=505569470&amp;Site=www.goldenidc.com&amp;Menu=yes"
+                       class="resource-footer">立即咨询</a>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    {% block zyfa_context %}
-                    {% endblock zyfa_context %}
-                </div>
+
             </div>
         </div>
     </div>
